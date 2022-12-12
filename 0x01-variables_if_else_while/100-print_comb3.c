@@ -10,25 +10,17 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 48; i < 58; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (j = 48; j < 58; j++)
+		for (j = 0; j < 10; j++)
 		{
-			if (i == j)
-			{
+			putchar((i % 10) + '0');
+			putchar((j % 10) + '0');
+
+			if (i == 9 && j == 9)
 				continue;
-			}
-			putchar(i);
-			putchar(j);
-			if (i == 56 && j == 57)
-			{
-				break;
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
