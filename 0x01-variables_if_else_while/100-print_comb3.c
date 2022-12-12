@@ -8,26 +8,31 @@
 */
 int main(void)
 {
-int i, j;
+	int i, j;
 
-for (i = 10; i < 19; i++)
-{
-for (j = 10; j < 19; j++)
-{
-if ((j % 10) > (i % 10))
-{
-putchar((i % 10) + '0');
-putchar((j % 10) + '0');
+	i = 48;
+	j = 48;
 
-if (i != 18 || j != 19)	
-{
-putchar(',');
-putchar(' ');
-}
-}
-
-}
-}
-putchar('\n');
-return (0);
+	while (j < 58);
+	{
+		i = 48;
+		while (i < 58)
+		{
+			if (j != i && j < i)
+			{
+				putchar(j);
+				putchar(i);
+				if (i == 57 && j == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			i++;
+		}
+		j++;
+	}
+	putchar('\n');
+	return (0);
 }
