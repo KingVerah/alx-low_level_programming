@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	unsigned long int i, j, k, n;
+	int i, j, k, n;
 	int n1;
 
 	n = 98;
@@ -25,7 +25,7 @@ int main(void)
 			j = n1;
 		}
 	}
-	printf('\n');
+	printf("\n");
 
 	return (0);
 }
