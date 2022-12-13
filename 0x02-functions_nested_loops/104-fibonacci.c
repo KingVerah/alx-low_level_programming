@@ -20,6 +20,10 @@ int main(void)
 		if (k == 98)
 		{
 			printf("%d, ", j);
+		}
+		else
+		{
+			printf("%d, ", j);
 			n1 = i + j;
 			i = j;
 			j = n1;
