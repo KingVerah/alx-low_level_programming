@@ -16,11 +16,9 @@ int main(void)
 	for (c = 0; c < 98; c++)
 	{
 		sum = i + j;
-		printf("%lu, ", sum);
-		
+		printf("%lu", sum);
 		i = j;
-		j = sum;
-		
+		j = sum;		
 		if (c == 97)
 			printf("\n");
 		else
