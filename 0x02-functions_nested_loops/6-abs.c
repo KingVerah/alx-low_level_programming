@@ -1,0 +1,25 @@
+#include "main.h"
+
+/**
+*
+* _abs - computesthe absolute value of an integer
+* @r: character to be checked
+*
+* Return: integer
+*/
+
+int _abs(int r)
+{
+	if (r > 0)
+	{
+		return (r);
+	}
+	else if (r < 0)
+	{
+		return(-r);
+	}
+	else
+	{
+		return (r);
+	}
+}
