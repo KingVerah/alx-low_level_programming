@@ -10,26 +10,21 @@
 
 int main(void)
 {
-	int i, j, k, n;
-	int n1;
+	int c;
+	unsigned long i = 0, j = 1, sum;
 
-	n = 98;
-
-	for (k = 1; k <= n; k++)
+	for (c = 0; c < 98; c++)
 	{
-		if (k == 98)
-		{
-			printf("%d, ", j);
-		}
+		sum = i + j;
+		printf("%lu, ", sum);
+		
+		i = j;
+		j = sum;
+		
+		if (c == 97)
+			printf("\n");
 		else
-		{
-			printf("%d, ", j);
-			n1 = i + j;
-			i = j;
-			j = n1;
-		}
+			printf(", ");
 	}
-	printf("\n");
-
 	return (0);
 }
