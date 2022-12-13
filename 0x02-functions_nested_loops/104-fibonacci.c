@@ -18,7 +18,7 @@ int main(void)
 		sum = i + j;
 		printf("%lu", sum);
 		i = j;
-		j = sum;		
+		j = sum;	
 		if (c == 97)
 			printf("\n");
 		else
