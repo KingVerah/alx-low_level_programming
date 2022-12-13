@@ -2,7 +2,7 @@
 
 /**
 *
-* _abs - computesthe absolute value of an integer
+* _abs - computes the absolute value of an integer
 * @r: character to be checked
 *
 * Return: integer
@@ -16,7 +16,7 @@ int _abs(int r)
 	}
 	else if (r < 0)
 	{
-		return(-r);
+		return (-r);
 	}
 	else
 	{
