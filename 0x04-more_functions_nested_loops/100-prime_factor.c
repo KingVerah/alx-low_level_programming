@@ -14,13 +14,13 @@ int main(void)
 	{
 		if (i % p == 0)
 		{
-			i /= 2;
+			i = i / 2;
 			continue;
 		}
-		for (p = 3; p < i / 2; p += 2)
+		for (p = 3; p < i / 2; p = p + 2)
 		{
 			if (i % p == 0)
-				i /= p;
+				i = i / p;
 		}
 	}
 	printf("%ld\n", p);
