@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_square - prints a square, followed by a new line
@@ -9,7 +8,8 @@
 
 void print_square(int size)
 {
-	int i, int j;
+	int i;
+	int j;
 	
 	for (j = 0; j < size; j++)
 	{
