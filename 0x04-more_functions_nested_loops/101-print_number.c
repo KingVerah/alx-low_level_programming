@@ -2,45 +2,45 @@
 
 /**
  * print_number - prints an integer
- * @n: random integer
+ * @i: random integer
  * Return: void
  */
 
-void print_number(int n)
+void print_number(int i)
 {
-	char ld, cr;
+	char l, c;
 	int r;
-	int ct = 0;
+	int t = 0;
 
-	if (n < 0)
+	if (i < 0)
 	{
 		_putchar ('-');
-		ld = (char)('0' - (n % 10));
-		n = n / -10;
+		l = (char)('0' - (i % 10));
+		i = i / -10;
 	}
 		else
 		{
-			ld = (char)((n % 10) + '0');
-		n = n / 10;
+			l = (char)((i % 10) + '0');
+		i = i / 10;
 	}
 	r = 0;
-	while (n > 0)
+	while (i > 0)
 	{
-		r = r * 10 + (n % 10);
-		n = n / 10;
-		ct++;
+		r = r * 10 + (i % 10);
+		i = i / 10;
+		t++;
 	}
 	while (r > 0)
 	{
-		cr = (char)((r % 10) + '0');
-		_putchar(cr);
+		c = (char)((r % 10) + '0');
+		_putchar(c);
 		r = r / 10;
-		ct--;
+		t--;
 	}
-	while (ct != 0)
+	while (t != 0)
 	{
 		_putchar('0');
-			ct--;
+			t--;
 	}
-	_putchar(ld);
+	_putchar(l);
 }
