@@ -16,7 +16,7 @@ int main(void)
 		f3 = f1 + f2;
 		printf("%d, ", f3);
 		f1 = f2;
-		f2 = t;
+		f2 = f3;
 	}
 	return (0);
 }
