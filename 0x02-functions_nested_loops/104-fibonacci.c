@@ -13,10 +13,15 @@ int main(void)
 
 	for (i = 2; i < n; i++)
 	{
-		f3 = f1 + f2;
-		printf("%d, ", f3);
-		f1 = f2;
-		f2 = f3;
+		if (i <= 1)
+			f3 = i;
+		else
+		{
+			f3 = f1 + f2;
+			f1 = f2;
+			f2 = f3;
+	}
+		printf("%d ", f3);
 	}
 	return (0);
 }
