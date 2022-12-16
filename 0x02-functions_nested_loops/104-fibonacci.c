@@ -11,12 +11,13 @@ int main(void)
 {
 	int f1 = 0, f2 = 1, f3, i;
 
-	for (i = 0; i < 98; ++i)
+	while ( i < 98)
 	{
 		f3 = f1 + f2;
 		printf(" %d", f3);
 		f1 = f2;
 		f2 = f3;
+		i = i + 1;
 	}
 	return (0);
 }
