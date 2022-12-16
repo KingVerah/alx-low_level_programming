@@ -11,7 +11,7 @@ int main(void)
 {
 	int f1 = 0, f2 = 1, f3, i, n = 98;
 
-	for (i = 2; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (i <= 1)
 			f3 = i;
