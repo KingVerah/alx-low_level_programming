@@ -11,14 +11,12 @@ int main(void)
 {
 	int i, n;
 	int f1 = 0, f2 = 1;
-
 	int t = f1 + f2;
 
 	n = 98;
-	printf("%d, %d ", f1, f2);
 
 	for (i = 3; i <= n; i++)
-	{	
+	{
 		printf("%d, ", t);
 		f1 = f2;
 		f2 = t;
