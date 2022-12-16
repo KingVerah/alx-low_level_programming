@@ -15,7 +15,7 @@ int main(void)
 	for (i = 0; i < 98; i++)
 	{
 		f3 = f1 + f2;
-		printf("$lu", f3);
+		printf("%lu", f3);
 		f1 = f2;
 		f2 = f3;
 
