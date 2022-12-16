@@ -1,32 +1,31 @@
-#include <stdio.h>
+#include "main.h"                                                                                                                     
+#include <stdio.h>                                                                                                                    
 
-/**
- * main - prints fibonnaci numbers
- * Description: prints from 1 to 98
- * Return: Always(0) Success
+/**                                                                                                                                   
+ * main - prints the first 98 Fibonacci numbers, starting with 1 and 2
+ * followed by a new line
+ * Return: Always 0
  */
 
 int main(void)
 {
-	int a, b, c, n, s;
-
-	n = 98;
-
-	for (c = 1; c <= n; c++)
+	int c;
+	unsigned long i = 0, j = 1, sum;
+	
+	for (c = 0; c < 98; c++)
 	{
-		if (c == 98)
-		{
-			printf("%d, ", b);
-		}
+		sum = i + j;
+		printf("%lu", sum);
+		
+		i = j;
+		j = sum;
+		
+		if (c == 97)
+			printf("\n");
 		else
 		{
-			printf("%d, ", b);
-			s = a + b;
-			a = b;
-			b = s;
+			printf(", ");
 		}
 	}
-	printf("\n");
-
 	return (0);
 }
