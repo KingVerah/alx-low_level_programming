@@ -9,18 +9,14 @@
 
 int main(void)
 {
-	int i, n;
-	int f1 = 0, f2 = 1;
-	int t = f1 + f2;
+	int f1 = 0, f2 = 1, f3, i, n = 98;
 
-	n = 98;
-
-	for (i = 3; i <= n; i++)
+	for (i = 2; i < n; ++i)
 	{
-		printf("%d, ", t);
+		f3 = f1 + f2;
+		printf("%d, ", f3);
 		f1 = f2;
 		f2 = t;
-		t = f1 + f2;
 	}
 	return (0);
 }
