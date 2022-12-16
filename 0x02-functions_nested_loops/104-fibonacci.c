@@ -9,18 +9,20 @@
 
 int main(void)
 {
-	unsigned long f1 = 0, f2 = 1, f3 = 0, sum = 0;
+	int i;
+	unsigned long f1 = 0, f2 = 1, f3;
 
-	while (f3 < 4000000)
+	for (i = 0; i < 98; i++)
 	{
 		f3 = f1 + f2;
+		printf("$lu", f3);
 		f1 = f2;
 		f2 = f3;
 
-		if ((f1 % 2) == 0)
-			sum = sum + f1;
+		if (i == 97)
+			printf("\n");
+		else
+			printf(", ");
 	}
-	printf("%ld\n", sum);
-	
 	return (0);
 }
