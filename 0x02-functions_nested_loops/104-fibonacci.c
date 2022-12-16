@@ -11,7 +11,7 @@ int main(void)
 {
 	int f1 = 0, f2 = 1, f3, i;
 
-	while ( i < 98)
+	while (i < 98)
 	{
 		f3 = f1 + f2;
 		printf(" %d", f3);
