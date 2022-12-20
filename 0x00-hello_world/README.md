@@ -1,5 +1,4 @@
 # 0x00. C - Hello, World
----
 
 ## Learning Objectives:bulb:
 What you should learn from this project:
