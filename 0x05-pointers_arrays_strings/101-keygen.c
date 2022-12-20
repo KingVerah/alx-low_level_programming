@@ -4,10 +4,9 @@
 #include <time.h>
 
 /**
-* main - Entry Point
-* Description: generates random valid passwords for the program 101-crackme
-* Return: Generated password
-*/
+ * main - Entry Point
+ * Return: Generated password
+ */
 
 int main(void)
 {
