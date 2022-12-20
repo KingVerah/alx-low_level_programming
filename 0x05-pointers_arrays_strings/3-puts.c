@@ -8,7 +8,7 @@
  * On sucess: Returns no error
  */
 
-void _pus(char *str)
+void _puts(char *str)
 {
 	int i = 0;
 
