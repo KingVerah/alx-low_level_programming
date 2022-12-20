@@ -9,11 +9,18 @@
 
 void rev_string(char *s)
 {
-	int i, tmp, len = _strlen(s);
+	int i, len;
+	cahr container;
+
+	len = _strlen(s) - 1;
+	i = 0;
+	while (i <= len)
 	{
-		tmp = *(s + i);
-		*(s + i) = *(s + len - i - 1);
-		*(s + len - i - 1) = tmp;
+		container = s[i];
+		s[i] = s[len];
+		s[len] = container;
+		len--;
+		i++;
 	}
 }
 
@@ -27,7 +34,7 @@ int _strlen(char *s)
 {
 	int len = 0;
 
-	while (*(s + len) != '\0')
+	while (s[len] != '\0')
 		len++;
 
 	return (len);
