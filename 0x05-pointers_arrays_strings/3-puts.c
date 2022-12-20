@@ -10,7 +10,7 @@
 
 void _pus(char *str)
 {
-	int i = o;
+	int i = 0;
 
 	while (*(str + i) != '\0')
 	{
