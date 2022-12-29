@@ -5,4 +5,4 @@
 ---
 
 ## Environment
-* Language: C
+* Languages: Bash, C
